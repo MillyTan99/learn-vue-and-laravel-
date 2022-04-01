@@ -20,3 +20,7 @@ Route::get('/', function () {
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+//enter using url such as /profile
+Route::get('/{path}', [App\Http\Controllers\HomeController::class, 'index'])->name('path','([A-z\d-\/_.]+)?');
+
+

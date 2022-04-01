@@ -8,6 +8,32 @@ require('./bootstrap');
 
 window.Vue = require('vue').default;
 
+
+
+
+import Vue from 'vue';
+import VueRouter from 'vue-router'
+Vue.use(VueRouter)
+
+
+let routes=[
+    {path:'/product',component:require('./components/Product.vue').default },
+    {path:'/order',component: require('./components/Order.vue').default },
+    {path:'/customer',component: require('./components/Customer/Customer.vue').default },
+    {path:'/addCust',component: require('./components/Customer/AddCust').default },
+    {path:'/viewcust',component: require('./components/Customer/ViewCust').default },
+    
+    
+]
+
+const router = new VueRouter({
+    //to reduce the word in url
+    mode:'history',
+    routes
+})
+
+
+
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue
@@ -29,4 +55,6 @@ Vue.component('example-component', require('./components/ExampleComponent.vue').
 
 const app = new Vue({
     el: '#app',
+    router
 });
+
