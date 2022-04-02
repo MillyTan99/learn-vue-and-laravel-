@@ -5562,6 +5562,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   mounted: function mounted() {
     console.log('Component mounted.');
@@ -5581,6 +5582,38 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -10781,7 +10814,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\n.nav-link[data-v-7e94e6d4]:hover{\n    background:rgb(155, 161, 245);\n}\n.nav-link[data-v-7e94e6d4]:active{\n    background: blue;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\n.nav-link[data-v-7e94e6d4]:hover{\n    background:rgb(155, 161, 245);\n}\n.nav-link[data-v-7e94e6d4]:active{\n    background: blue;\n}\n.product[data-v-7e94e6d4]{\n    width: 40px;\n    height: 40px;\n}\n\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -40397,12 +40430,12 @@ var staticRenderFns = [
       _c("div", { staticClass: "row justify-content-center" }, [
         _c("div", { staticClass: "col-md-8" }, [
           _c("div", { staticClass: "card" }, [
-            _c("div", { staticClass: "card-header" }, [_vm._v("Order List")]),
+            _c("div", { staticClass: "card-header" }, [
+              _vm._v("\n                    Order List"),
+            ]),
             _vm._v(" "),
             _c("div", { staticClass: "card-body" }, [
-              _vm._v(
-                "\n                    I'm an example component.\n                "
-              ),
+              _vm._v("\n                    No order yet\n                "),
             ]),
           ]),
         ]),
@@ -40443,12 +40476,69 @@ var staticRenderFns = [
       _c("div", { staticClass: "row justify-content-center" }, [
         _c("div", { staticClass: "col-md-8" }, [
           _c("div", { staticClass: "card mt-5" }, [
-            _c("div", { staticClass: "card-header" }),
+            _c("div", { staticClass: "card-header" }, [
+              _c("div", { staticClass: "card-title" }, [
+                _vm._v(
+                  "\n                        Product list    \n                        "
+                ),
+              ]),
+            ]),
             _vm._v(" "),
             _c("div", { staticClass: "card-body" }, [
-              _vm._v(
-                "\n                    I'm an example component.\n                "
-              ),
+              _c("div", { staticClass: "card-body table-responsive p-0" }, [
+                _c("table", { staticClass: "table table-hover text-nowrap" }, [
+                  _c("thead", [
+                    _c("tr", [
+                      _c("th", [_vm._v("ID")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v("Product")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v("Image")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v("Description")]),
+                      _vm._v(" "),
+                      _c("th", [_vm._v("Cost")]),
+                    ]),
+                  ]),
+                  _vm._v(" "),
+                  _c("tbody", [
+                    _c(
+                      "tr",
+                      {
+                        staticClass: "d-flex",
+                        staticStyle: { display: "inline-block" },
+                      },
+                      [
+                        _c("td", [_vm._v("123")]),
+                        _vm._v(" "),
+                        _c("td", [_vm._v("Badminton")]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _c("img", {
+                            staticClass: "product",
+                            attrs: { src: "img/badminton.jpg" },
+                          }),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v("Yonex Muscle Power 2 Bdminton Racket"),
+                        ]),
+                        _vm._v(" "),
+                        _c("td", [
+                          _vm._v("RM 69.99\n        "),
+                          _c("a", { attrs: { href: "#" } }, [
+                            _c("i", { staticClass: "fa fa-edit blue" }),
+                          ]),
+                          _vm._v("\n        /\n        "),
+                          _c("a", { attrs: { href: "#" } }, [
+                            _c("i", { staticClass: "fa fa-trash red" }),
+                          ]),
+                        ]),
+                      ]
+                    ),
+                  ]),
+                ]),
+              ]),
             ]),
           ]),
         ]),

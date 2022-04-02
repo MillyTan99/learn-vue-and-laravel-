@@ -3,10 +3,11 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">Order List</div>
+                    <div class="card-header">
+                        Order List</div>
 
                     <div class="card-body">
-                        I'm an example component.
+                        No order yet
                     </div>
                 </div>
             </div>
